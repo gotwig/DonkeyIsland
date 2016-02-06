@@ -10,7 +10,7 @@ You need the SFML libraries.
 Install the SFML development libraries for your distribution. Ubuntu/Arch Linux ship them in their repositories. After that, open the CMake file in your IDE and compile the target(KDevelop, QTCreator, CLion tested).
 
 ###Windows
-Just open the Visual Studio solution (.sln) file and compile the target.
+Just open the Visual Studio solution (.sln) file and compile the target. Only 64bit supported.
 
 # License
 I am not sure about the image rights, I found them on Google/Deviantart, and hold no copyright to any of the assets.
