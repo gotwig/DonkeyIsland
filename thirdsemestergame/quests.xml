@@ -1,0 +1,64 @@
+<levels>
+	<level id="lake_grass">
+		<quest id ="1" action="pickupItem" target="40x20" itemvalue="1" entvalue="1">
+			<description>
+			Pickup the hay
+			</description>
+		</quest>
+
+		<quest id ="2" action="move"  target="200x100" sound="water.ogg">
+			<description>
+      My fur itches a lot :(
+      </description>
+		</quest>
+
+		<quest id ="3" action="useItem"  itemvalue="1" target="player" sound="eatHay.ogg">
+			<description>
+			Im feeling quite hungry hm...
+			</description>
+		</quest>
+
+		<quest id ="4" action="talk" target="430x40" value="Hello adventurer! I am a bird.">
+			<description>
+			Who is that bird over there?
+			</description>
+		</quest>
+
+		<quest id ="5" action="move"  target="600x30">
+			<description>
+			I should continue my journey :)
+			</description>
+		</quest>
+	</level>
+
+	<level id="house">
+    <quest id ="1" action="talk" target="190x200" value="Please help me :'( My kitten is on the roof.">
+      <description>
+        That girl over there looks quite upset.
+      </description>
+    </quest>
+    <quest id ="2" action="pickupItem" target="-70x90" itemvalue="2" entvalue="5">
+      <description>
+		Hm, I need to find something to reach the roof.
+	  </description>
+		</quest>
+    <quest id ="3" action="useItem" target="500x240" itemvalue="2">
+      <description>
+        Great, now I just need to place it at the right spot.
+      </description>
+    </quest>
+    <quest id ="4" action="move" target="480x80">
+      <description>
+        Take the kitten, and get of the roof.
+      </description>
+    </quest>
+    <quest id ="5" action="talk" target="190x200" value="Thank you very much!">
+      <description>
+        Good job! Talk to the girl and head on :-)
+      </description>
+    </quest>
+    
+
+	</level>
+
+</levels>

@@ -1,0 +1,178 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/run/media/gotwig/067A86B67A86A1D3/Users/xxx/Documents/Visual Studio 2015/Projects/thirdsemestergame/thirdsemestergame/AnimatedSprite.cpp
+AnimatedSprite.hpp
+/run/media/gotwig/067A86B67A86A1D3/Users/xxx/Documents/Visual Studio 2015/Projects/thirdsemestergame/thirdsemestergame/AnimatedSprite.hpp
+
+/run/media/gotwig/067A86B67A86A1D3/Users/xxx/Documents/Visual Studio 2015/Projects/thirdsemestergame/thirdsemestergame/AnimatedSprite.hpp
+SFML/Graphics/RenderTarget.hpp
+-
+SFML/System/Time.hpp
+-
+SFML/Graphics/Drawable.hpp
+-
+SFML/Graphics/Transformable.hpp
+-
+SFML/System/Vector2.hpp
+-
+Animation.hpp
+/run/media/gotwig/067A86B67A86A1D3/Users/xxx/Documents/Visual Studio 2015/Projects/thirdsemestergame/thirdsemestergame/Animation.hpp
+
+/run/media/gotwig/067A86B67A86A1D3/Users/xxx/Documents/Visual Studio 2015/Projects/thirdsemestergame/thirdsemestergame/Animation.cpp
+Animation.hpp
+/run/media/gotwig/067A86B67A86A1D3/Users/xxx/Documents/Visual Studio 2015/Projects/thirdsemestergame/thirdsemestergame/Animation.hpp
+
+/run/media/gotwig/067A86B67A86A1D3/Users/xxx/Documents/Visual Studio 2015/Projects/thirdsemestergame/thirdsemestergame/Animation.hpp
+vector
+-
+SFML/Graphics/Rect.hpp
+-
+SFML/Graphics/Texture.hpp
+-
+
+/run/media/gotwig/067A86B67A86A1D3/Users/xxx/Documents/Visual Studio 2015/Projects/thirdsemestergame/thirdsemestergame/Inventory.cpp
+Inventory.h
+/run/media/gotwig/067A86B67A86A1D3/Users/xxx/Documents/Visual Studio 2015/Projects/thirdsemestergame/thirdsemestergame/Inventory.h
+SFML/Graphics.hpp
+-
+algorithm
+-
+
+/run/media/gotwig/067A86B67A86A1D3/Users/xxx/Documents/Visual Studio 2015/Projects/thirdsemestergame/thirdsemestergame/Inventory.h
+SFML/Graphics.hpp
+-
+
+/run/media/gotwig/067A86B67A86A1D3/Users/xxx/Documents/Visual Studio 2015/Projects/thirdsemestergame/thirdsemestergame/Quests.cpp
+Quests.h
+/run/media/gotwig/067A86B67A86A1D3/Users/xxx/Documents/Visual Studio 2015/Projects/thirdsemestergame/thirdsemestergame/Quests.h
+iostream
+-
+string
+-
+
+/run/media/gotwig/067A86B67A86A1D3/Users/xxx/Documents/Visual Studio 2015/Projects/thirdsemestergame/thirdsemestergame/Quests.h
+tinyxml2.h
+/run/media/gotwig/067A86B67A86A1D3/Users/xxx/Documents/Visual Studio 2015/Projects/thirdsemestergame/thirdsemestergame/tinyxml2.h
+SFML/Graphics.hpp
+-
+Inventory.h
+/run/media/gotwig/067A86B67A86A1D3/Users/xxx/Documents/Visual Studio 2015/Projects/thirdsemestergame/thirdsemestergame/Inventory.h
+SFML/Audio.hpp
+-
+unordered_map
+-
+gamescene.h
+/run/media/gotwig/067A86B67A86A1D3/Users/xxx/Documents/Visual Studio 2015/Projects/thirdsemestergame/thirdsemestergame/gamescene.h
+AnimatedSprite.hpp
+/run/media/gotwig/067A86B67A86A1D3/Users/xxx/Documents/Visual Studio 2015/Projects/thirdsemestergame/thirdsemestergame/AnimatedSprite.hpp
+
+/run/media/gotwig/067A86B67A86A1D3/Users/xxx/Documents/Visual Studio 2015/Projects/thirdsemestergame/thirdsemestergame/brick.h
+SFML/Graphics.hpp
+-
+
+/run/media/gotwig/067A86B67A86A1D3/Users/xxx/Documents/Visual Studio 2015/Projects/thirdsemestergame/thirdsemestergame/gamescene.cpp
+gamescene.h
+/run/media/gotwig/067A86B67A86A1D3/Users/xxx/Documents/Visual Studio 2015/Projects/thirdsemestergame/thirdsemestergame/gamescene.h
+
+/run/media/gotwig/067A86B67A86A1D3/Users/xxx/Documents/Visual Studio 2015/Projects/thirdsemestergame/thirdsemestergame/gamescene.h
+SFML/Graphics.hpp
+-
+string
+-
+SFML/Audio.hpp
+-
+
+/run/media/gotwig/067A86B67A86A1D3/Users/xxx/Documents/Visual Studio 2015/Projects/thirdsemestergame/thirdsemestergame/house.cpp
+house.h
+/run/media/gotwig/067A86B67A86A1D3/Users/xxx/Documents/Visual Studio 2015/Projects/thirdsemestergame/thirdsemestergame/house.h
+
+/run/media/gotwig/067A86B67A86A1D3/Users/xxx/Documents/Visual Studio 2015/Projects/thirdsemestergame/thirdsemestergame/house.h
+gamescene.h
+/run/media/gotwig/067A86B67A86A1D3/Users/xxx/Documents/Visual Studio 2015/Projects/thirdsemestergame/thirdsemestergame/gamescene.h
+
+/run/media/gotwig/067A86B67A86A1D3/Users/xxx/Documents/Visual Studio 2015/Projects/thirdsemestergame/thirdsemestergame/lake_grass.cpp
+lake_grass.h
+/run/media/gotwig/067A86B67A86A1D3/Users/xxx/Documents/Visual Studio 2015/Projects/thirdsemestergame/thirdsemestergame/lake_grass.h
+
+/run/media/gotwig/067A86B67A86A1D3/Users/xxx/Documents/Visual Studio 2015/Projects/thirdsemestergame/thirdsemestergame/lake_grass.h
+gamescene.h
+/run/media/gotwig/067A86B67A86A1D3/Users/xxx/Documents/Visual Studio 2015/Projects/thirdsemestergame/thirdsemestergame/gamescene.h
+
+/run/media/gotwig/067A86B67A86A1D3/Users/xxx/Documents/Visual Studio 2015/Projects/thirdsemestergame/thirdsemestergame/main.cpp
+SFML/Graphics.hpp
+-
+SFML/Audio.hpp
+-
+cmath
+-
+ctime
+-
+cstdlib
+-
+brick.h
+/run/media/gotwig/067A86B67A86A1D3/Users/xxx/Documents/Visual Studio 2015/Projects/thirdsemestergame/thirdsemestergame/brick.h
+iostream
+-
+stdio.h
+-
+tinyxml2.h
+/run/media/gotwig/067A86B67A86A1D3/Users/xxx/Documents/Visual Studio 2015/Projects/thirdsemestergame/thirdsemestergame/tinyxml2.h
+Inventory.h
+/run/media/gotwig/067A86B67A86A1D3/Users/xxx/Documents/Visual Studio 2015/Projects/thirdsemestergame/thirdsemestergame/Inventory.h
+Quests.h
+/run/media/gotwig/067A86B67A86A1D3/Users/xxx/Documents/Visual Studio 2015/Projects/thirdsemestergame/thirdsemestergame/Quests.h
+gamescene.h
+/run/media/gotwig/067A86B67A86A1D3/Users/xxx/Documents/Visual Studio 2015/Projects/thirdsemestergame/thirdsemestergame/gamescene.h
+lake_grass.h
+/run/media/gotwig/067A86B67A86A1D3/Users/xxx/Documents/Visual Studio 2015/Projects/thirdsemestergame/thirdsemestergame/lake_grass.h
+house.h
+/run/media/gotwig/067A86B67A86A1D3/Users/xxx/Documents/Visual Studio 2015/Projects/thirdsemestergame/thirdsemestergame/house.h
+AnimatedSprite.hpp
+/run/media/gotwig/067A86B67A86A1D3/Users/xxx/Documents/Visual Studio 2015/Projects/thirdsemestergame/thirdsemestergame/AnimatedSprite.hpp
+
+/run/media/gotwig/067A86B67A86A1D3/Users/xxx/Documents/Visual Studio 2015/Projects/thirdsemestergame/thirdsemestergame/tinyxml2.cpp
+tinyxml2.h
+/run/media/gotwig/067A86B67A86A1D3/Users/xxx/Documents/Visual Studio 2015/Projects/thirdsemestergame/thirdsemestergame/tinyxml2.h
+new
+-
+stddef.h
+-
+stdarg.h
+-
+cstddef
+-
+cstdarg
+-
+
+/run/media/gotwig/067A86B67A86A1D3/Users/xxx/Documents/Visual Studio 2015/Projects/thirdsemestergame/thirdsemestergame/tinyxml2.h
+ctype.h
+-
+limits.h
+-
+stdio.h
+-
+stdlib.h
+-
+string.h
+-
+cctype
+-
+climits
+-
+cstdio
+-
+cstdlib
+-
+cstring
+-
+android/log.h
+-
+assert.h
+-
+
