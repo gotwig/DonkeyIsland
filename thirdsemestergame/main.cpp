@@ -52,7 +52,7 @@ int main()
 
 	sf::Time actionTimer;
 
-	GameScene* loadedLevel = new LakeGrass();
+	auto* loadedLevel = new LakeGrass();
 
 	tinyxml2::XMLElement* levelElement = NULL;
 
