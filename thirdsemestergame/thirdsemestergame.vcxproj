@@ -76,8 +76,8 @@
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <LinkIncremental>true</LinkIncremental>
-    <IncludePath>C:\Users\xxx\Desktop\SFML-2.3.2\include;$(IncludePath)</IncludePath>
-    <LibraryPath>C:\Users\xxx\Desktop\SFML-2.3.2\lib;$(LibraryPath)</LibraryPath>
+    <IncludePath>$(SolutionDir)SFML-2.3.2\include;$(IncludePath)</IncludePath>
+    <LibraryPath>$(SolutionDir)SFML-2.3.2\lib;$(LibraryPath)</LibraryPath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <LinkIncremental>false</LinkIncremental>
@@ -154,6 +154,8 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="AnimatedSprite.cpp" />
+    <ClCompile Include="Animation.cpp" />
     <ClCompile Include="gamescene.cpp" />
     <ClCompile Include="house.cpp" />
     <ClCompile Include="Inventory.cpp" />
@@ -174,6 +176,8 @@
     <Media Include="..\..\..\..\..\Desktop\resoucen\pong.wav" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="AnimatedSprite.hpp" />
+    <ClInclude Include="Animation.hpp" />
     <ClInclude Include="brick.h" />
     <ClInclude Include="gamescene.h" />
   </ItemGroup>

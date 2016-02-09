@@ -42,6 +42,12 @@
     <ClCompile Include="lake_grass.cpp">
       <Filter>Quelldateien</Filter>
     </ClCompile>
+    <ClCompile Include="AnimatedSprite.cpp">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="Animation.cpp">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Font Include="..\..\..\..\..\Desktop\resoucen\Lobster-Regular.ttf">
@@ -96,6 +102,12 @@
       <Filter>Headerdateien\levels</Filter>
     </ClInclude>
     <ClInclude Include="house.h">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="AnimatedSprite.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="Animation.hpp">
       <Filter>Headerdateien</Filter>
     </ClInclude>
   </ItemGroup>
