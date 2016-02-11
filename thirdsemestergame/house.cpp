@@ -7,10 +7,11 @@
 House::House() {
     setName("house");
     setBgPath("bg_house.png");
+
+	setLvlSound("house.ogg");
+
     addEnt(1, "cat_sad.png", 550, 100);
-    //addEnt(2, "cat_happy.png", 10, 340);
 	addEnt(3, "girl_sad.png", 220, 210);
-	//addEnt(4, "girl_happy.png", 550, 100);
 
 	addEnt(5, "ladder_mountain.png", 30, 220);
 	

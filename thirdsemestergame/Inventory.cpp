@@ -5,10 +5,11 @@
 struct Inventory::item itemList[7] = { { "" },
 { "hay.png" },
 { "ladder.png" },
+{ "watercan_inv.png" },
 };
 
 void Inventory::refreshItems() {
-	float x = 500.0f, y = 480.0f;
+	float x = 500.0f, y = 500.0f;
 	int i = 0;
 
 	for (auto && item : currentItems) {
@@ -19,7 +20,7 @@ void Inventory::refreshItems() {
 
 			i++;
 			if (i > 2) {
-				y = 530;
+				y = 550;
 
 			}
 

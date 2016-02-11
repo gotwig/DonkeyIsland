@@ -12,7 +12,6 @@ class House : public GameScene {
 public:
     House();
 	void Update(int currentQuestid);
-	void Update();
 };
 
 

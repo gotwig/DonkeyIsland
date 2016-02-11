@@ -3,8 +3,7 @@
 
 GameScene::GameScene()
 {
-
-
+	
 }
 
 void GameScene::Update(int currentQuestid)
@@ -22,6 +21,15 @@ void GameScene::setBgPath(const std::string &bgPath) {
 		bgSprite.setTexture(bgTex);
 	}
 
+}
+
+void GameScene::setLvlSound(const std::string & audioFile)
+{
+	AmbientSound.setLoop(true);
+	AmbientSound.setVolume(20);
+	AmbientSound.openFromFile(std::string("./sounds/") + audioFile);
+
+	AmbientSound.play();
 }
 
 void GameScene::addEnt(int id, std::string texPath, float x, float y) {

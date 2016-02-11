@@ -5,5 +5,5 @@ class LakeGrass : public GameScene {
 
 public:
     LakeGrass();
-
+	void Update(int currentQuestid);
 };

@@ -48,6 +48,9 @@
     <ClCompile Include="Animation.cpp">
       <Filter>Quelldateien</Filter>
     </ClCompile>
+    <ClCompile Include="flower.cpp">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Font Include="..\..\..\..\..\Desktop\resoucen\Lobster-Regular.ttf">
@@ -108,6 +111,9 @@
       <Filter>Headerdateien</Filter>
     </ClInclude>
     <ClInclude Include="Animation.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="flower.h">
       <Filter>Headerdateien</Filter>
     </ClInclude>
   </ItemGroup>

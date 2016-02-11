@@ -156,6 +156,7 @@
   <ItemGroup>
     <ClCompile Include="AnimatedSprite.cpp" />
     <ClCompile Include="Animation.cpp" />
+    <ClCompile Include="flower.cpp" />
     <ClCompile Include="gamescene.cpp" />
     <ClCompile Include="house.cpp" />
     <ClCompile Include="Inventory.cpp" />
@@ -179,6 +180,7 @@
     <ClInclude Include="AnimatedSprite.hpp" />
     <ClInclude Include="Animation.hpp" />
     <ClInclude Include="brick.h" />
+    <ClInclude Include="flower.h" />
     <ClInclude Include="gamescene.h" />
   </ItemGroup>
   <ItemGroup>

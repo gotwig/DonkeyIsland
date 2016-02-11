@@ -16,8 +16,11 @@
 #include "Quests.h"
 
 #include "gamescene.h"
+
 #include "lake_grass.h"
 #include "house.h"
+#include "flower.h"
+
 
 #include "AnimatedSprite.hpp"
 
@@ -28,6 +31,10 @@ using namespace tinyxml2;
 void update(sf::Time elapsed)
 {
 	elapsed.asSeconds();
+}
+
+void loadLevel() {
+	
 }
 
 int main()
@@ -52,7 +59,10 @@ int main()
 
 	sf::Time actionTimer;
 
-	auto* loadedLevel = new LakeGrass();
+	int loadedLevelIndex = 0;
+
+	GameScene* levels[] = { new LakeGrass(), new flower(), new House() };
+	GameScene* loadedLevel = levels[loadedLevelIndex];
 
 	tinyxml2::XMLElement* levelElement = NULL;
 
@@ -205,18 +215,17 @@ int main()
 
 		window.display();
 
-		if (playerQuests->currentQuestId > 5) {
+		if (playerQuests->currentQuestId > 5 && loadedLevelIndex <= 3) {
 			delete loadedLevel;
 			delete playerQuests;
 
-			loadedLevel = new House();
+			loadedLevelIndex++;
+			loadedLevel = levels[loadedLevelIndex];
 			playerQuests = new Quests(loadedLevel);
 			PlayerImage.setPosition(0.0f, 100.0f);
 		}
 
 		loadedLevel->Update(playerQuests->currentQuestId);
-
-
 
 		if (sf::Mouse::isButtonPressed(sf::Mouse::Left))
 		{
@@ -249,9 +258,7 @@ int main()
 				}
 
 
-				//if (draggeditem->itemIconSprite.getPosition().y < PlayerImage.getPosition().y) {
-				//	dragging = false;
-				//}
+
 			}
 			// MOVE TO POINT via CURSOR
 			float k = 1;

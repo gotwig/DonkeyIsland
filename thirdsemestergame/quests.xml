@@ -1,5 +1,5 @@
 <levels>
-	<level id="lake_grass">
+	<level id="lake_grass" sound="lakegrass.ogg">
 		<quest id ="1" action="pickupItem" target="40x20" itemvalue="1" entvalue="1">
 			<description>
 			Pickup the hay
@@ -18,20 +18,50 @@
 			</description>
 		</quest>
 
-		<quest id ="4" action="talk" target="430x40" value="Hello adventurer! I am a bird.">
+		<quest id ="4" action="talk" target="430x40" sound="owl.ogg" value="        who-o-o, who-o-o! who-o-o, who-o-o!">
 			<description>
-			Who is that bird over there?
+			What kind of bird is that over there?
 			</description>
 		</quest>
 
 		<quest id ="5" action="move"  target="600x30">
 			<description>
-			I should continue my journey :)
+			Its an owl, obviously. I should continue :)
 			</description>
 		</quest>
 	</level>
 
-	<level id="house">
+  <level id="flower" sound="flower.ogg">
+    <quest id ="1" action="talk" target="50x150" value="    Can you help me to impress a woman?">
+      <description>
+        WoW, that guy there in blue looks in love.
+      </description>
+    </quest>
+    <quest id ="2" action="pickupItem" target="400x200" itemvalue="3" entvalue="2">
+      <description>
+        Hm, theres water over there, but how can I transport it?
+      </description>
+    </quest>
+    <quest id ="3" action="useItem" target="600x240" itemvalue="3" sound="bucketWater.ogg" dontWaste="true">
+      <description>
+        Genius! Now get some water.
+      </description>
+    </quest>
+    <quest id ="4" action="useItem" target="-40x240" sound="plant.ogg" itemvalue="3">
+      <description>
+        Now lets water the flower over there.
+      </description>
+    </quest>
+    <quest id ="5" action="move"  target="600x30">
+      <description>
+        I'm done here, and should move on before the sun sits down :)
+      </description>
+    </quest>
+
+
+  </level>
+  
+	<level id="house" sound="house.ogg">
     <quest id ="1" action="talk" target="190x200" value="Please help me :'( My kitten is on the roof.">
       <description>
         That girl over there looks quite upset.
@@ -42,19 +72,19 @@
 		Hm, I need to find something to reach the roof.
 	  </description>
 		</quest>
-    <quest id ="3" action="useItem" target="500x240" itemvalue="2">
+    <quest id ="3" action="useItem" target="500x240" sound="ladder.ogg" itemvalue="2">
       <description>
         Great, now I just need to place it at the right spot.
       </description>
     </quest>
-    <quest id ="4" action="move" target="480x80">
+    <quest id ="4" action="move" target="480x80" sound="cat.ogg">
       <description>
-        Take the kitten, and get of the roof.
+        Ok, come to me kitty, kitty :)
       </description>
     </quest>
-    <quest id ="5" action="talk" target="190x200" value="Thank you very much!">
+    <quest id ="5" action="move" target="20000x20000">
       <description>
-        Good job! Talk to the girl and head on :-)
+        Congratulations, you reached the end! Thanks for playing :-)
       </description>
     </quest>
     

@@ -26,10 +26,11 @@ void Quests::checkQuests(Inventory::item* draggeditem, Inventory* playerInventor
 
 		currentQuestText.setString(id);
 
+		if (currentQuestLevel){
 		if (strcmp(id, currentQuestLevel->Name.c_str()) == 0){
 			levelElement = child;
 		}
-
+		}
 
 	}
 
@@ -95,14 +96,25 @@ void Quests::checkQuests(Inventory::item* draggeditem, Inventory* playerInventor
 
 							child->QueryIntAttribute("itemvalue", &itemId);
 
+
 							if (draggeditem) {
 								if (draggeditem->id == itemId) {
 
 									if (draggeditem->itemIconSprite.getPosition().y < targetY + 200 && draggeditem->itemIconSprite.getPosition().y > targetY && draggeditem->itemIconSprite.getPosition().x  < targetX + 200 && draggeditem->itemIconSprite.getPosition().x  > targetX) {
-										playerInventory->removeItem(draggeditem->id);
+										
+
 										currentQuestId++;
 
+										if (!child->Attribute("dontWaste")) {
+											if (draggeditem) {
+												playerInventory->removeItem(draggeditem->id);
+											}
+										}
+
 										draggeditem = NULL;
+
+
+
 
 										if (child->Attribute("sound")) {
 											actionSound.openFromFile(std::string("./sounds/") + child->Attribute("sound"));
