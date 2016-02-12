@@ -6,7 +6,6 @@
 #include <cmath>
 #include <ctime>
 #include <cstdlib>
-#include "brick.h"
 #include <iostream>
 #include <stdio.h>
 #include "tinyxml2.h"
@@ -74,7 +73,7 @@ int main()
 
 	bool clicked = false;
 
-	if (MenuBGTex.loadFromFile("menubackground.jpg")) {
+	if (MenuBGTex.loadFromFile("resources/menubackground.jpg")) {
 		MenuBackground.setTexture(MenuBGTex);
 		MenuBackground.setPosition(0.0f, 460.0f);
 	}
@@ -85,7 +84,7 @@ int main()
 	Quests* playerQuests = new Quests(loadedLevel);
 
 
-	if (!PlayerTex.loadFromFile("donkeyMovement.png")) {
+	if (!PlayerTex.loadFromFile("resources/donkeyMovement.png")) {
 		std::cout << "Failed to load player spritesheet!" << std::endl;
 		return 1;
 	}

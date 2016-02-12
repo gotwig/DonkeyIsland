@@ -5,10 +5,10 @@
 
 Quests::Quests(GameScene* currentLevel)
 {
-	doc.LoadFile("quests.xml");
+	doc.LoadFile("resources/quests.xml");
 	currentQuestLevel = currentLevel;
 
-	font.loadFromFile("Lobster-Regular.ttf");
+	font.loadFromFile("resources/Lobster-Regular.ttf");
 
 }
 

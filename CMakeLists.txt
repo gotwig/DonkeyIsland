@@ -6,7 +6,6 @@
     set(CMAKE_CXX_STANDARD 14)
 
     set(SOURCE_FILES
-            thirdsemestergame/brick.h
             thirdsemestergame/AnimatedSprite.cpp
             thirdsemestergame/AnimatedSprite.hpp
             thirdsemestergame/Animation.cpp

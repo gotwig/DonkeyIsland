@@ -1,5 +1,5 @@
 #pragma once
-#include "gamescene.h";
+#include "gamescene.h"
 
 class LakeGrass : public GameScene {
 

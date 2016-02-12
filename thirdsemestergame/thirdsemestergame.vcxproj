@@ -84,8 +84,8 @@
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <LinkIncremental>false</LinkIncremental>
-    <IncludePath>C:\Users\xxx\Desktop\SFML-2.3.2\include;$(IncludePath)</IncludePath>
-    <LibraryPath>C:\Users\xxx\Desktop\SFML-2.3.2\lib;$(LibraryPath)</LibraryPath>
+    <IncludePath>$(SolutionDir)SFML-2.3.2\include;$(IncludePath)</IncludePath>
+    <LibraryPath>$(SolutionDir)SFML-2.3.2\lib;$(LibraryPath)</LibraryPath>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
@@ -172,6 +172,8 @@
     <Image Include="..\..\..\..\..\Desktop\resoucen\bg.jpg" />
     <Image Include="..\..\..\..\..\Desktop\resoucen\brick.png" />
     <Image Include="..\..\..\..\..\Desktop\resoucen\paddle.png" />
+    <Image Include="..\..\DonkeyIsland_BUILD\inventoryIcons\donkeyIcon.ico" />
+    <Image Include="inventoryIcons\donkeyIcon.ico" />
   </ItemGroup>
   <ItemGroup>
     <Media Include="..\..\..\..\..\Desktop\resoucen\pong.wav" />
@@ -194,12 +196,16 @@
     <ClInclude Include="lake_grass.h" />
     <ClInclude Include="main.h" />
     <ClInclude Include="Quests.h" />
+    <ClInclude Include="resource.h" />
     <ClInclude Include="tinyxml2.h" />
   </ItemGroup>
   <ItemGroup>
     <Xml Include="quests.xml">
       <SubType>Designer</SubType>
     </Xml>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="thirdsemestergame.rc" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

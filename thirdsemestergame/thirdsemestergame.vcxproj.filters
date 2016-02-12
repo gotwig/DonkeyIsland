@@ -73,6 +73,12 @@
     <Image Include="..\..\..\..\..\Desktop\DonkeyIsland\menubackground.jpg">
       <Filter>Ressourcendateien</Filter>
     </Image>
+    <Image Include="inventoryIcons\donkeyIcon.ico">
+      <Filter>Ressourcendateien</Filter>
+    </Image>
+    <Image Include="..\..\DonkeyIsland_BUILD\inventoryIcons\donkeyIcon.ico">
+      <Filter>Ressourcendateien</Filter>
+    </Image>
   </ItemGroup>
   <ItemGroup>
     <Media Include="..\..\..\..\..\Desktop\resoucen\pong.wav">
@@ -116,10 +122,18 @@
     <ClInclude Include="flower.h">
       <Filter>Headerdateien</Filter>
     </ClInclude>
+    <ClInclude Include="resource.h">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <Xml Include="quests.xml">
       <Filter>Quelldateien</Filter>
     </Xml>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="thirdsemestergame.rc">
+      <Filter>Ressourcendateien</Filter>
+    </ResourceCompile>
   </ItemGroup>
 </Project>

@@ -17,7 +17,7 @@ void GameScene::setName(const std::string &Name) {
 void GameScene::setBgPath(const std::string &bgPath) {
 	GameScene::bgPath = bgPath;
 
-	if (bgTex.loadFromFile(bgPath)) {
+	if (bgTex.loadFromFile(std::string("resources/") + bgPath)) {
 		bgSprite.setTexture(bgTex);
 	}
 
@@ -27,9 +27,10 @@ void GameScene::setLvlSound(const std::string & audioFile)
 {
 	AmbientSound.setLoop(true);
 	AmbientSound.setVolume(20);
-	AmbientSound.openFromFile(std::string("./sounds/") + audioFile);
+	if (AmbientSound.openFromFile(std::string("./sounds/") + audioFile)) {
+		AmbientSound.play();
+	};
 
-	AmbientSound.play();
 }
 
 void GameScene::addEnt(int id, std::string texPath, float x, float y) {
