@@ -16,6 +16,8 @@
             thirdsemestergame/Inventory.cpp
             thirdsemestergame/Inventory.h
             thirdsemestergame/lake_grass.h
+            thirdsemestergame/flower.cpp
+            thirdsemestergame/flower.h
             thirdsemestergame/main.cpp
             thirdsemestergame/main.h
             thirdsemestergame/Quests.cpp
