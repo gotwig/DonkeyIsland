@@ -46,7 +46,8 @@ Vault Boy: http://peccadillos.deviantart.com/art/Vault-Boy-Valentine-112780940
 
 Vault Girl: http://rebrn.com/re/vault-girl-thanks-you-for-all-the-support-103806/
 
-well: 
+Well: http://clubpenguin.wikia.com/wiki/File:Wish_You_Well_in-game.png 
+
 
 Watering Can: clipartsheep.com
               http://www2.arnes.si/~nbolci1/images/GARDEN_WATERING_CAN.jpg
@@ -62,6 +63,23 @@ Ladder: https://openclipart.org/detail/18440/ladder-flat
         http://zeldawiki.org/Stepladder
 
 #Sounds: 
+
+###Level 1:
+Ambient: https://www.youtube.com/watch?v=Zsqep7_9_mw
+Owl: https://www.youtube.com/watch?v=0UI2EQBY2sw
+Water splash: XXX
+Eating Hay: XXX
+
+###Level 2:
+Ambient: https://www.youtube.com/watch?v=U9S6eBZkndc
+
+Flower growing: https://www.youtube.com/watch?v=WmszGRHXwEM
+Watering can: https://www.youtube.com/watch?v=hJuPVVBKxwo
+
+###Level 3:
+Ambient: https://www.youtube.com/watch?v=e26JQr8PWYs
+Cat: https://www.youtube.com/watch?v=A9gknsvMOG4
+Ladder: http://www.freesound.org/people/D%20W/sounds/152792/
 
 Thanks for your interest in my project!
 
