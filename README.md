@@ -1,9 +1,12 @@
 # DonkeyIsland
+![alt text](http://i.imgur.com/0zrqVP7.png "Screenshot of Level 1")
 
 # Idea
-So our task was to create a game similar to Monkey Island, so I thought about making a new one , called Donkey Island, and here it is.
+So our task at the Cologne Game Lab was to create a game similar to Monkey Island, so I thought about making a new one , called Donkey Island, and here it is!
 
-## Compiling / Playing
+## Download
+
+## Compiling
 You need the SFML libraries.
 
 ###Linux
