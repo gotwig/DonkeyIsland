@@ -5,8 +5,8 @@
 So our task at the Cologne Game Lab was to create a game similar to Monkey Island, so I thought about making a new one , called Donkey Island, and here it is!
 
 ## Download
-Linux & Windows:
-[<img src="http://scidle.com/wp-content/uploads/2014/12/boton_download_github.png" width="200">](https://www.dropbox.com/s/h3smj8ap9y5j2qg/DonkeyIsland_BUILD.zip?dl=0)
+Linux & Windows
+[<img src="http://scidle.com/wp-content/uploads/2014/12/boton_download_github.png" width="250">](https://www.dropbox.com/s/h3smj8ap9y5j2qg/DonkeyIsland_BUILD.zip?dl=0)
 
 ###Windows
 Open DonkeyIsland
