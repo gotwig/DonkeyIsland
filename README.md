@@ -15,7 +15,8 @@ Open DonkeyIsland
 ###Linux
 Open DonkeyIsland.sh
 
-###Mac: Compile from sources.
+###Mac
+Compile from sources.
 
 ## Compiling
 You need the SFML libraries.
