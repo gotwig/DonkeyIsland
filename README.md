@@ -5,6 +5,13 @@
 So our task at the Cologne Game Lab was to create a game similar to Monkey Island, so I thought about making a new one , called Donkey Island, and here it is!
 
 ## Download
+Linux & Windows:
+[![Foo](http://scidle.com/wp-content/uploads/2014/12/boton_download_github.png)](https://www.dropbox.com/s/h3smj8ap9y5j2qg/DonkeyIsland_BUILD.zip?dl=0)
+
+###Windows: Open DonkeyIsland
+###Linux: Open DonkeyIsland.sh
+
+###Mac: Compile from sources.
 
 ## Compiling
 You need the SFML libraries.
