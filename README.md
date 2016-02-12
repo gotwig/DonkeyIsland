@@ -1,5 +1,5 @@
 # DonkeyIsland
-<img src="http://i.imgur.com/0zrqVP7.png" width="200">
+<img src="http://i.imgur.com/0zrqVP7.png" width="600">
 
 # Idea
 So our task at the Cologne Game Lab was to create a game similar to Monkey Island, so I thought about making a new one , called Donkey Island, and here it is!
