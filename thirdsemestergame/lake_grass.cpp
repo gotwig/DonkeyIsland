@@ -1,7 +1,3 @@
-//
-//
-//
-
 #include "lake_grass.h"
 
 LakeGrass::LakeGrass() {
