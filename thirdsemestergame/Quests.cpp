@@ -51,8 +51,6 @@ void Quests::checkQuests(Inventory::item* draggeditem, Inventory* playerInventor
 						if (child->Attribute("target")) {
 							std::string test = child->Attribute("target");
 
-							//std::string test = "100x200";
-
 							targetX = playerPos.x;
 							targetY = playerPos.y;
 
@@ -65,7 +63,7 @@ void Quests::checkQuests(Inventory::item* draggeditem, Inventory* playerInventor
 
 
 						}
-
+			// Pickup Item Action: Pickup an item from a position on the screen, and add it to the player inventory
 			if (child->Attribute("action") == std::string("pickupItem")) {
 
 				itemId = 0;
@@ -83,14 +81,14 @@ void Quests::checkQuests(Inventory::item* draggeditem, Inventory* playerInventor
 					if (child->Attribute("sound")) {
 						actionSound.openFromFile(std::string("./sounds/") + child->Attribute("sound"));
 
-						// Play the music
+						// Play the actionsound
 						actionSound.play();
 					}
 				}
 
 			}
-
-						if (child->Attribute("action") == std::string("useItem")) {
+			// Use Item Action: Use your inventory item by drag and drop onto a specific position on the screen
+			if (child->Attribute("action") == std::string("useItem")) {
 
 							itemId = 0;
 
@@ -130,8 +128,8 @@ void Quests::checkQuests(Inventory::item* draggeditem, Inventory* playerInventor
 							}
 
 						}
-
-						if (child->Attribute("action") == std::string("move")) {
+			// Move Action: Move to the position
+			if (child->Attribute("action") == std::string("move")) {
 
 
 							if (playerPos.y < targetY + 200 && playerPos.y   > targetY && playerPos.x  < targetX + 200 && playerPos.x  > targetX) {
@@ -144,34 +142,34 @@ void Quests::checkQuests(Inventory::item* draggeditem, Inventory* playerInventor
 								}
 							}
 						}
-
-            if (child->Attribute("action") == std::string("talk")) {
-
-
-                if (playerPos.y < targetY + 200 && playerPos.y   > targetY && playerPos.x  < targetX + 200 && playerPos.x  > targetX) {
-
-
-                    talkText.setFont(font);
-                    sf::FloatRect textRect = currentQuestText.getLocalBounds();
-                    talkText.setOrigin(textRect.left + textRect.width/2.0f,
-                                               0.0f);
-
-                    talkText.setPosition(250.0f, 55.0f);
-                    talkText.setString(child->Attribute("value"));
-                    talkText.setCharacterSize(40);
-                    talkText.setColor(sf::Color::White);
-
-                    triggerShowText = true;
-                    currentQuestId++;
-                    if (child->Attribute("sound")) {
-                        actionSound.openFromFile(std::string("./sounds/") + child->Attribute("sound"));
-
-                        // Play the music
-                        actionSound.play();
-                    }
-                }
-
-            }
+			// Talk Action: shows string on screen by another entity
+			if (child->Attribute("action") == std::string("talk")) {
+		
+		
+		                if (playerPos.y < targetY + 200 && playerPos.y   > targetY && playerPos.x  < targetX + 200 && playerPos.x  > targetX) {
+		
+		
+		                    talkText.setFont(font);
+		                    sf::FloatRect textRect = currentQuestText.getLocalBounds();
+		                    talkText.setOrigin(textRect.left + textRect.width/2.0f,
+		                                               0.0f);
+		
+		                    talkText.setPosition(250.0f, 55.0f);
+		                    talkText.setString(child->Attribute("value"));
+		                    talkText.setCharacterSize(40);
+		                    talkText.setColor(sf::Color::White);
+		
+		                    triggerShowText = true;
+		                    currentQuestId++;
+		                    if (child->Attribute("sound")) {
+		                        actionSound.openFromFile(std::string("./sounds/") + child->Attribute("sound"));
+		
+		                        // Play the music
+		                        actionSound.play();
+		                    }
+		                }
+		
+		            }
 
 
 
@@ -179,13 +177,13 @@ void Quests::checkQuests(Inventory::item* draggeditem, Inventory* playerInventor
 
 	}
 
+	// these functions set the color, font and correct centered position of the current quest task (in bottom menu)
 	currentQuestText.setFont(font);
 	sf::FloatRect textRect = currentQuestText.getLocalBounds();
 	currentQuestText.setOrigin(textRect.left + textRect.width/2.0f,
 				   0.0f);
 
 	currentQuestText.setPosition(350.0f, 425.0f);
-	//currentQuestText.setString(title);
 	currentQuestText.setCharacterSize(30);
 	currentQuestText.setColor(sf::Color::Yellow);
 
