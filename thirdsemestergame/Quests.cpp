@@ -162,7 +162,6 @@ void Quests::checkQuests(Inventory::item* draggeditem, Inventory* playerInventor
                     talkText.setColor(sf::Color::White);
 
                     triggerShowText = true;
-                    clock.restart();
                     currentQuestId++;
                     if (child->Attribute("sound")) {
                         actionSound.openFromFile(std::string("./sounds/") + child->Attribute("sound"));
