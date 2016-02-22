@@ -2,6 +2,7 @@
 #include <SFML/Graphics.hpp>
 #include <algorithm>
 
+// specifies the items which the player can obtain during the game
 struct Inventory::item itemList[7] = { { "" },
 { "hay.png" },
 { "ladder.png" },
