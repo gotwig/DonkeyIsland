@@ -1,7 +1,3 @@
-//
-// Created by gotwig on 26.12.15.
-//
-
 #ifndef THIRDSEMESTERGAME_HOUSE_H
 #define THIRDSEMESTERGAME_HOUSE_H
 
