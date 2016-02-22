@@ -26,22 +26,12 @@
 using namespace sf;
 using namespace tinyxml2;
 
-
-void update(sf::Time elapsed)
-{
-	elapsed.asSeconds();
-}
-
-void loadLevel() {
-	
-}
-
 int main()
 {
+	//Initalize Variables and Settings
 	const sf::Vector2i screenDimensions(800, 600);
 
 	FloatRect playerMoveSpace = sf::FloatRect(100, 100, screenDimensions.x - 100, screenDimensions.y - 320);
-
 
 	RenderWindow window(VideoMode(screenDimensions.x, screenDimensions.y), "Donkey Island", Style::Titlebar | Style::Close);
 
@@ -78,9 +68,10 @@ int main()
 		MenuBackground.setPosition(0.0f, 460.0f);
 	}
 
+	// load a new inventory. The inventory is kept across scenes.
 	Inventory* playerInventory = new Inventory();
 
-
+	// load a new quest journal. Each level, this variable is recreated with the right quests for that current level
 	Quests* playerQuests = new Quests(loadedLevel);
 
 
@@ -120,7 +111,8 @@ int main()
 
 	float speed = 160.f;
 	bool noKeyWasPressed = true;
-
+	// ------------------------
+	// Initialization ends here 
 
 	// Our GAMELOOP starts here
 	while (window.isOpen()) {
@@ -182,20 +174,26 @@ int main()
 
 		// update AnimatedSprite
 		PlayerImage.update(frameTime);
+		
+		// constatly check if the player completed the quest
 		playerQuests->checkQuests(draggeditem, playerInventory, PlayerImage);
 
 		window.clear();
 
 		if (loadedLevel) {
+			// draw the level background
 			window.draw(loadedLevel->bgSprite);
 		}
 
+		// draw the menubackground (bottom part of screen)
 		window.draw(MenuBackground);
 
 		for (auto && entity : loadedLevel->currentEntities) {
+			// draw all active entities in the level
 			window.draw(entity.Sprite);
 		}
 
+		// Show text of talking NPCs
 		if (playerQuests->triggerShowText) {
 
 			if (playerQuests->clock.getElapsedTime().asSeconds() < 10)
@@ -209,11 +207,14 @@ int main()
 		window.draw(playerQuests->currentQuestText);
 
 		for (auto && item : playerInventory->currentItems) {
+			// draw all items in the player invneotry
 			window.draw(item.itemIconSprite);
 		}
 
+		// initiate the final draw call
 		window.display();
 
+		// Switch level, if 5 tasks have been accomplished in every map
 		if (playerQuests->currentQuestId > 5 && loadedLevelIndex <= 3) {
 			delete loadedLevel;
 			delete playerQuests;
@@ -224,17 +225,20 @@ int main()
 			PlayerImage.setPosition(0.0f, 100.0f);
 		}
 
+		// Execute the Game Loop in each individual level constantly
 		loadedLevel->Update(playerQuests->currentQuestId);
 
+		//Check for left mouse clicks
 		if (sf::Mouse::isButtonPressed(sf::Mouse::Left))
 		{
 			sf::Vector2i localPosition = sf::Mouse::getPosition(window);
 			sf::Vector2f worldPos = window.mapPixelToCoords(localPosition);
+			// Move player, if cursor is in game world
 			if (localPosition.y < 380 && !dragging) {
 					Target1.x = worldPos.x - 100;
 					Target1.y = worldPos.y - 100;
 			}
-
+			// Use item and init dragging, if cursor is in menu (bottom screen part)
 			if (localPosition.y > 380 && !dragging) {
 
 				for (auto && item : playerInventory->currentItems) {
@@ -252,7 +256,7 @@ int main()
 
 			if (draggeditem) {
 				if (dragging) {
-
+					//Set the item position to the mouse cursor position if the user is dragging it
 					draggeditem->itemIconSprite.setPosition(localPosition.x - 32, localPosition.y - 32);
 				}
 
@@ -267,7 +271,8 @@ int main()
 			float ex = Target1.x;
 			float ey = Target1.y;
 
-			//PlayerImage.move(Target1.x,Target1.y);
+			// "clicked" is used to not allow the player to just drag his charachter across the screen,
+			// but instead the player has to confirm each charachter movement by mouse click.
 
 			if (!clicked) {
 				PlayerImage.setPosition(Target1.x, Target1.y);
