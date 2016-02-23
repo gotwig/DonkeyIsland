@@ -16,6 +16,7 @@ public:
 	//temporary actionSound for each task, which gets played once completed
 	sf::Music actionSound;
 
+	// used to stop showing the Talk Action text after some time
 	sf::Clock clock;
 
 	// make sure to run each check only once
