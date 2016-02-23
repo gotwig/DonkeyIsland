@@ -4,6 +4,8 @@
 # Idea
 So our task at the Cologne Game Lab was to create a game similar to Monkey Island, so I thought about making a new one , called Donkey Island, and here it is!
 
+[##Documentation](https://docs.google.com/document/d/1BuMa0qK9gaZkFRhbYe6LyFpOwXHGhttPEZLOIAXCtKk/edit#heading=h.ua833cjbog9w)
+
 ## Download
 Linux & Windows
 
