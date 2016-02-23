@@ -16,6 +16,8 @@ public:
 	//temporary actionSound for each task, which gets played once completed
 	sf::Music actionSound;
 
+	sf::Clock clock;
+
 	// make sure to run each check only once
 	bool runOnce = true;
 	// XML structure of the quests.xml file
